@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>João Victor Mourão</title>
+<meta name="description" content="Técnico em Desenvolvimento de Sistemas e estudante de Segurança da Informação.">
+<style>
+  :root {
+    --bg: #fbfaf7; --text: #222; --muted: #6b6b66; --line: #e4e1da;
+    --accent: #2457c5; --soft: #e6edfb;
+    --band: #2457c5; --band-text: #fff; --band-sub: #d6e2fb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151515; --text: #e6e4df; --muted: #9a9890; --line: #2c2c2a;
+      --accent: #8db4f5; --soft: #1f2b45;
+      --band: #1a2744; --band-text: #e6e4df; --band-sub: #9db4e6;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--text); font-family: Georgia, "Times New Roman", serif; font-size: 18px; line-height: 1.7; }
+
+  /* faixa colorida do topo */
+  .top { background: var(--band); color: var(--band-text); padding: 52px 22px 46px; }
+  .inner, .page { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 2.1rem; font-weight: 700; line-height: 1.2; }
+  .sub { color: var(--band-sub); margin-top: 8px; }
+  .top-links { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; font-family: system-ui, sans-serif; }
+  .top-links a { color: var(--band-text); border: 1px solid var(--band-sub); border-radius: 999px; padding: 5px 16px; font-size: .9rem; text-decoration: none; transition: .2s; }
+  .top-links a:hover { background: var(--band-text); color: var(--band); transform: translateY(-2px); }
+
+  .page { padding: 20px 22px 72px; }
+  section { padding-top: 30px; margin-top: 30px; border-top: 1px solid var(--line); }
+  section:first-child { border-top: 0; margin-top: 0; }
+  h2 { display: flex; align-items: center; gap: 10px; font-size: .8rem; font-family: system-ui, sans-serif; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); font-weight: 700; margin-bottom: 14px; }
+  h2::before { content: ""; width: 22px; height: 3px; background: var(--accent); border-radius: 2px; transition: width .25s; }
+  section:hover h2::before { width: 36px; }
+  p + p { margin-top: 14px; }
+  ul { list-style: none; }
+  .small { font-size: .95rem; }
+  [hidden] { display: none !important; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:hover { text-decoration-thickness: 2px; }
+
+  /* listas */
+  .list li { padding: 6px 0 6px 14px; border-left: 3px solid var(--line); transition: .2s; }
+  .list li + li { margin-top: 8px; }
+  .list li:hover { border-left-color: var(--accent); background: var(--soft); padding-left: 18px; border-radius: 0 6px 6px 0; }
+  .list span { color: var(--muted); }
+
+  /* tecnologias */
+  .tech { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tech span { background: var(--soft); color: var(--accent); font-family: system-ui, sans-serif; font-size: .88rem; font-weight: 600; padding: 4px 14px; border-radius: 999px; transition: .2s; cursor: default; }
+  .tech span:hover { background: var(--accent); color: var(--bg); transform: translateY(-2px); }
+
+  /* contato */
+  .contact { display: flex; flex-wrap: wrap; gap: 10px; font-family: system-ui, sans-serif; }
+  .contact a { text-decoration: none; border: 1px solid var(--accent); border-radius: 8px; padding: 8px 18px; font-size: .95rem; font-weight: 600; transition: .2s; }
+  .contact a:hover { background: var(--accent); color: var(--bg); transform: translateY(-2px); }
+  .contact a.main { background: var(--accent); color: var(--bg); }
+  .contact a.main:hover { opacity: .88; }
+
+  footer { margin-top: 48px; color: var(--muted); font-size: .85rem; font-family: system-ui, sans-serif; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="inner">
+    <h1>João Victor Mourão</h1>
+    <p class="sub">Técnico em Desenvolvimento de Sistemas e estudante de Segurança da Informação.</p>
+    <div class="top-links">
+      <a id="lnkTop" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a id="ghTop" href="#" target="_blank" rel="noopener">GitHub</a>
+      <a id="mailTop" href="#">E-mail</a>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+  <main>
+    <section>
+      <h2>Sobre mim</h2>
+      <p>Sou de Brasília. Me formei como técnico em Desenvolvimento de Sistemas em 2026, na ETSM, e foi lá que tive meu primeiro contato com TI. Gostei de programar e de resolver problemas, e resolvi seguir nessa área.</p>
+      <p>Hoje faço Segurança da Informação na UCB. Antes de entrar na tecnologia, trabalhei com rotina administrativa e de expedição, e levo dessa época a organização e o cuidado com os detalhes.</p>
+      <p>Estou procurando meu primeiro estágio, de preferência em desenvolvimento ou segurança.</p>
+    </section>
+
+    <section>
+      <h2>Estudando agora</h2>
+      <ul class="list">
+        <li>Segurança da Informação <span>(graduação na UCB)</span></li>
+        <li>Cibersegurança <span>(como funcionam as ameaças e como se proteger delas)</span></li>
+        <li>Git e GitHub <span>(versionar meu código e publicar o que estudo)</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projeto: Saúde+</h2>
+      <p>Foi o nosso TCC no curso técnico, feito em grupo com colegas de turma: um sistema web de agendamento de consultas médicas. Concluímos o projeto e apresentamos para a banca.</p>
+      <p>Fizemos duas versões. Na primeira, o front-end era em PHP, MySQL e Bootstrap, consumindo uma API REST feita em Java. A segunda foi implementada em Java com Spring Boot.</p>
+      <p>Com ele aprendi, na prática, a ligar front-end, back-end e banco de dados, a encontrar erros no código e a trabalhar em equipe.</p>
+      <p class="small" id="projLinks" hidden>
+        <a id="projRepo" href="#" target="_blank" rel="noopener" hidden>Código</a>
+        <span id="projSep" hidden> · </span>
+        <a id="projDemo" href="#" target="_blank" rel="noopener" hidden>Demonstração</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Tecnologias</h2>
+      <div class="tech">
+        <span>Java</span><span>Spring Boot</span><span>PHP</span><span>MySQL</span>
+        <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>API REST</span>
+        <span>Git</span><span>GitHub</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Trajetória</h2>
+      <ul class="list">
+        <li><strong>2026 até hoje</strong><br><span>Segurança da Informação, UCB (cursando)</span></li>
+        <li><strong>2026</strong><br><span>Técnico em Desenvolvimento de Sistemas, ETSM (Escola Técnica de Santa Maria)</span></li>
+        <li><strong>Antes</strong><br><span>Auxiliar administrativo e de expedição</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <div class="contact">
+        <a class="main" id="lnk" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a id="gh" href="#" target="_blank" rel="noopener">GitHub</a>
+        <a id="mail" href="#">joaovictormorao@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>João Victor Mourão</footer>
+</div>
+
+<script>
+/* ====== EDITE AQUI SEUS DADOS ====== */
+const ME = {
+  linkedin: "https://www.linkedin.com/in/joão-victor-mourão-9088871a9",
+  github: "https://github.com/Joaovictormourao",
+  email: "joaovictormorao@gmail.com"
+};
+/* Links do Saúde+ (deixe "" para esconder) */
+const PROJETO = {
+  repo: "",   // ex.: "https://github.com/Joaovictormourao/saude-plus"
+  demo: ""    // ex.: "https://link-do-sistema-no-ar.com"
+};
+/* =================================== */
+
+["lnk", "lnkTop"].forEach(id => document.getElementById(id).href = ME.linkedin);
+["gh", "ghTop"].forEach(id => document.getElementById(id).href = ME.github);
+["mail", "mailTop"].forEach(id => document.getElementById(id).href = "mailto:" + ME.email);
+
+const repo = document.getElementById("projRepo"), demo = document.getElementById("projDemo");
+if (PROJETO.repo) { repo.href = PROJETO.repo; repo.hidden = false; }
+if (PROJETO.demo) { demo.href = PROJETO.demo; demo.hidden = false; }
+if (PROJETO.repo && PROJETO.demo) document.getElementById("projSep").hidden = false;
+if (PROJETO.repo || PROJETO.demo) document.getElementById("projLinks").hidden = false;
+</script>
+</body>
+</html>
